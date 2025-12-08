@@ -4,45 +4,55 @@ const artwork = [
     {
         title: "The Japanese Footbridge",
         artist: "Claude Monet",
-        created: 1889,
+        date: 1889,
     },
 
     {
         title: "Water Lily Pond",
         artist: "Claude Monet",
-        created: 1900,
+        date: 1900,
     },
 
     {
         title: "Water Lily Pond 9",
         artist: "Claude Monet",
-        created: 1919,
+        date: 1919,
     },
 
     {
         title: "Bouquet of Sunflowers",
         artist: "Claude Monet",
-        created: 1881,
+        date: 1881,
     },
 
     {
         title: "Woman With a Parasol",
         artist: "Claude Monet",
-        created: 1875,
+        date: 1875,
     },
 
     {
         title: "Waterloo Bridge",
         artist: "Claude Monet",
-        created: 1903,
+        date: 1903,
     },
 
     {
         title: "Water Lilies at Sunset",
         artist: "Claude Monet",
-        created: 1914,
+        date: 1914,
     },
 
+    {
+        title: "Woman in the Garden",
+        artist: "Claude Monet",
+        date: 1866,
+    },
 
-
+    {
+        title: "Rouen Cathedral",
+        artist: "Claude Monet",
+        date: 1894,
+    },
 ]
+

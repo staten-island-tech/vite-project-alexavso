@@ -60,3 +60,22 @@ header {
     font-size: 25px;
     cursor: pointer;
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-family: Inter;
+    background-color: #CCD1E0;
+    cursor: pointer;
+    transition: 0.25s;
+}
