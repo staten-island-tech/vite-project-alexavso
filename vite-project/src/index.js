@@ -19,7 +19,7 @@ const artwork = [
     { title: "Adoration of the Magi", artist: "Leonardo da Vinci", date: 1482, popular: false },
 ]
 
-const popularArtworks = artwork.filter(item => item.popular);
+const newList = artwork.filter(item => item.popular);
 
 const results = document.getElementById("results");
 
