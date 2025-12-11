@@ -23,13 +23,13 @@ const newList = artwork.filter(item => item.popular);
 
 const results = document.getElementById("results");
 
-document.getElementById("popularBtn").addEventListener("click", () => {
+document.getElementById("Popular").addEventListener("click", () => {
     const popularArtworks = artwork.filter(item => item.popular);
     display(popularArtworks);
 });
 
-document.getElementById("artistBtn").addEventListener("click", () => {
-    // Example: Filter by Monet
+document.getElementById("Artist").addEventListener("click", () => {
+    // Filter by Monet
     const filteredByArtist = artwork.filter(item => item.artist === "Claude Monet");
     display(filteredByArtist);
 });
