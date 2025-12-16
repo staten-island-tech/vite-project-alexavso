@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Gallery</title>
@@ -11,31 +12,34 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <header>
-      <h1 class="web-title"><strong><em>Monet's Gallery</em></strong></h1>
-      
-      <div id="nav-icon"><i class="ri-menu-line"></i></div>
+        <h1 class="web-title"><strong><em>Monet's Gallery</em></strong></h1>
+
+        <div id="nav-icon"><i class="ri-menu-line"></i></div>
     </header>
-    
+
     <div class="gallary">
-        
+
         <!-- SECTION BEGINS -->
-        
+
         <h1 class="section-title">Artworks</h1>
 
         <!-- FILTER BUTTONS -->
         <div class="buttons">
+            <button id="Reset">Reset</button>
             <button id="Popular">Most Popular</button>
-            <button id="Artist">Artist</button>
+            <button id="Monet">Claude Monet</button>
+            <button id="Van-Gogh">Vincent Van Gogh</button>
+            <button id="Da-Vinci">Leonardo Da Vinci</button>
         </div>
 
         <!-- ARTWORK SECTION -->
 
         <div class="art-content">
-            <div class="art">
+            <div class="art" data-name="p-1">
                 <div class="img-box">
                     <img src="/img/the-japanese-footbridge.jpg" alt="Japanese Footbridge">
                 </div>
@@ -44,8 +48,8 @@
                     <span class="info">Created in 1899</span>
                 </div>
             </div>
-        
-            <div class="art">
+
+            <div class="art" data-name="p-2">
                 <div class="img-box">
                     <img src="/img/water-lily-pond-9.jpg" alt="Water Lily Pond 9">
                 </div>
@@ -54,8 +58,8 @@
                     <span class="info">Created in 1899-1919</span>
                 </div>
             </div>
-        
-            <div class="art">
+
+            <div class="art" data-name="p-3">
                 <div class="img-box">
                     <img src="/img/water-lilies-at-sunset.jpg" alt="Water Lilies at Sunset">
                 </div>
@@ -65,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-4">
                 <div class="img-box">
                     <img src="/img/water-lily-pond.jpg" alt="Water Lily Pond">
                 </div>
@@ -75,7 +79,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-5">
                 <div class="img-box">
                     <img src="/img/bouquet-of-sunflowers.jpg" alt="Bouquet Of Sunflowers">
                 </div>
@@ -84,8 +88,8 @@
                     <span class="info">Created in 1881</span>
                 </div>
             </div>
-        
-            <div class="art">
+
+            <div class="art" data-name="p-6">
                 <div class="img-box">
                     <img src="/img/woman-with-a-parasol.jpg" alt="Woman With a Parasol">
                 </div>
@@ -95,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-7">
                 <div class="img-box">
                     <img src="/img/women-in-the-garden.jpg" alt="women in the Garden">
                 </div>
@@ -104,8 +108,8 @@
                     <span class="info">Created in 1866</span>
                 </div>
             </div>
-       
-            <div class="art">
+
+            <div class="art" data-name="p-8">
                 <div class="img-box">
                     <img src="/img/waterloo-bridge.jpg" alt="Waterloo Bridge">
                 </div>
@@ -115,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-9">
                 <div class="img-box">
                     <img src="/img/rouen-cathedral.jpg" alt="Rouen Cathedral">
                 </div>
@@ -124,8 +128,8 @@
                     <span class="info">Created in 1894</span>
                 </div>
             </div>
-            
-            <div class="art">
+
+            <div class="art" data-name="p-10">
                 <div class="img-box">
                     <img src="/img/van-gogh-self-portrait.jpg" alt="Van Gogh Self Portrait">
                 </div>
@@ -135,7 +139,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-11">
                 <div class="img-box">
                     <img src="/img/starry-night.jpg" alt="Starry Night">
                 </div>
@@ -145,7 +149,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-12">
                 <div class="img-box">
                     <img src="/img/cafe-terrace-at-night.jpg" alt="cafe terrance at night">
                 </div>
@@ -155,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-13">
                 <div class="img-box">
                     <img src="/img/wheatfield-under-thunderclouds.jpg" alt="wheatfield under thunderclouds">
                 </div>
@@ -165,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-14">
                 <div class="img-box">
                     <img src="/img/almond-blossoms.jpg" alt="almond blossoms">
                 </div>
@@ -175,7 +179,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-15">
                 <div class="img-box">
                     <img src="/img/mona-lisa.jpg" alt="mona lisa">
                 </div>
@@ -185,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-16">
                 <div class="img-box">
                     <img src="/img/last-supper.jpg" alt="last-supper">
                 </div>
@@ -195,7 +199,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" data-name="p-17">
                 <div class="img-box">
                     <img src="/img/adoration-of-the-magi.jpg" alt="adoration of the magi">
                 </div>
@@ -204,19 +208,36 @@
                     <span class="info">Created in 1478</span>
                 </div>
             </div>
+
+        </div>
     
     </div>
 
     <!-- BOTTOM HALF OF THE PAGE -->
 
     <div class="bottom-page">
-    
+
         <!-- ART OF THE DAY SECTION -->
         <h1 class="section-title">Art of the Day</h1>
 
     </div>
 
+    <!-- ARTWORK DETAILS -->
+
+    <div class="artwork-preview">
+        
+        <div class="preview active" data-target="p-1">
+            <div id="close-icon"><i class="ri-close-line"></i></div>
+            <img src="/img/the-japanese-footbridge.jpg" alt="">
+            <h3>The Japanese Footbridge, 1899</h3>
+            <p>The Japanese Footbridge refers to the iconic wooden, arched bridge Claude Monet built over his water lily pond in Giverny, France, which became the subject of numerous famous Impressionist paintings, especially in the late 1890s and early 1920s, showcasing vibrant colors, reflections, and nature's harmony, reflecting his deep interest in Japanese art.</p>
+        </div>
+    
+    </div>
+    
+    
     
     <script type="module" src="/src/index.js"></script>
-  </body>
+</body>
+
 </html>

@@ -79,3 +79,57 @@ button {
     cursor: pointer;
     transition: 0.25s;
 }
+
+.art-of-day {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.artwork-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artwork-preview .preview {
+    display: none;
+    padding: 4rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.artwork-preview .preview.active{
+    display: inline-block;
+}
+
+.artwork-preview .preview img {
+    height: 25rem;
+}
+
+.artwork-preview .preview p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+.artwork-preview .preview #close-icon{
+    position: absolute;
+    top: 1rem; 
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 2rem;
+}
+
+.artwork-preview .preview #close-icon:hover{
+    transform: rotate(90deg);
+}
