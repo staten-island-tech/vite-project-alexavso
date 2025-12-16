@@ -84,6 +84,9 @@ document.querySelectorAll('.art-content .art').forEach(art => {
     art.onclick = () => {
         previewContainer.style.display = 'flex';
         let name = art.getAttribute('data-name');
+        
+        previewBox.forEach(preview => preview.classList.remove('active'));
+
         previewBox.forEach(preview => {
             let target = preview.getAttribute('data-target');
             if(name == target){
@@ -99,3 +102,4 @@ previewBox.forEach(close => {
         previewContainer.style.display = 'none';
     }
 })
+

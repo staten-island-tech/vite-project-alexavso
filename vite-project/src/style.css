@@ -1,3 +1,26 @@
+:root {
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-color: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmove {
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-color: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +76,7 @@ header {
 
 .img-box:hover img {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 #nav-icon {
@@ -92,7 +116,7 @@ button {
     min-height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -108,11 +132,13 @@ button {
 }
 
 .artwork-preview .preview.active{
-    display: inline-block;
+    display: block;
 }
 
 .artwork-preview .preview img {
-    height: 25rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .artwork-preview .preview p{
