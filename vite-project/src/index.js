@@ -103,3 +103,10 @@ previewBox.forEach(close => {
     }
 })
 
+// Upload
+
+const form = document.querySelector('form');
+
+document.getElementById('mySubmitButton').addEventListener('click', () => {
+    form.submit();
+});
